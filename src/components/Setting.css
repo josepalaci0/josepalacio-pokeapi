@@ -1,24 +1,20 @@
 body {
   background-color: #ce9443;
 }
-
 .App {
   font-family: sans-serif;
   margin: 25px;
   border-radius: 15px;
 }
-
 .home {
   margin: 15px;
 }
-
 .home-setting {
   margin-left: 30px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-
 .settingOK {
   position: absolute;
   min-height: 200px;
@@ -56,7 +52,6 @@ body {
   -moz-box-shadow: 0px 10px 22px -13px rgba(0, 0, 0, 0.39);
   box-shadow: 0px 10px 22px -13px rgba(0, 0, 0, 0.39);
 }
-
 .setting {
   width: 50%;
 }
@@ -66,37 +61,28 @@ body {
   color: brown;
   background-color: transparent;
 }
-
 .setting-setting i {
   font-size: 30px;
   margin-top: 15px;
 }
-
 .language {
   width: 50%;
   text-align: right;
   margin-top: 15px;
 }
-
-.setting button {
-  border: 0;
-
-
+.setting button { border: 0;
 }
 
 .setting button img {
   width: 40px;
   border-radius: 100%;
 }
-
 .home-presentation {
   width: 100%;
   height: 90vh;
 }
-
 .form {
   width: 100%;
-
   align-items: center;
   text-align: center;
 }
@@ -110,11 +96,9 @@ body {
   box-shadow: 0px 0px 18px -4px rgba(0, 0, 0, 0.95);
   border: 0;
 }
-
 .form button {
   height: 35px;
 }
-
 .home-form {
   display: flex;
   flex-direction: row;
@@ -123,14 +107,12 @@ body {
   width: 76%;
   margin-left: 12%;
 }
-
 .home-info {
   text-align: center;
   width: 50%;
   margin-top: 25%;
   height: 40vh;
 }
-
 .home-img {
   width: 50%;
   height: 40vh;
@@ -145,18 +127,7 @@ body {
   border-radius: 20px;
 }
 
-.cambioBu {
-  position: absolute;
-  color: #ffffff;
-  width: 40px;
-  height: 40px;
-  background-color: #f31010;
-  border-radius: 100%;
-  left: 7%;
-  top: -5%;
-  border: 5px;
-  cursor: pointer;
-}
+
 
 /*Temples*/
 .themple1 {
@@ -165,8 +136,8 @@ body {
   height: 40px;
   background-color: #050000;
   border-radius: 100%;
-  left: 20%;
-  top: 5%;
+  left: 30%;
+  top: 40%;
   border: 5px;
   cursor: pointer;
 }
@@ -178,7 +149,7 @@ body {
   background-color: #383F09;
   border-radius: 100%;
   left: 40%;
-  top: 5%;
+  top: 40%;
   border: 5px;
   cursor: pointer;
 }
@@ -189,8 +160,8 @@ body {
   height: 40px;
   background-color: #645143;
   border-radius: 100%;
-  left: 60%;
-  top: 5%;
+  left: 50%;
+  top: 40%;
   border: 5px;
   cursor: pointer;
 }
@@ -201,8 +172,8 @@ body {
   height: 40px;
   background-color: #ffffff;
   border-radius: 100%;
-  left: 80%;
-  top: 5%;
+  left: 60%;
+  top: 40%;
   border: 5px;
   cursor: pointer;
 }

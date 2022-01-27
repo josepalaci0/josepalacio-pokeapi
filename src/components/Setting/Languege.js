@@ -1,7 +1,7 @@
 import React from "react";
 
 function Language() {
-  return <div>Ingles | Español</div>;
+  return <div>Englis | Spanis</div>;
 }
 
 export default Language;

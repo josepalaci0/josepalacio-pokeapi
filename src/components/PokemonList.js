@@ -30,11 +30,12 @@ const PokemonList = (props) => {
                 <div className={"list-wrapper"}>
                     {pokemonList.data.map(el => {
                         return(
-                            <div className={"pokemon-item"}>                            
+                            <div key={el.url} className={"pokemon-item"}> 
+                                                       
                                 
                                <PokemonInfo url={el.url} />
                                 
-                                <Link to={`/pokemon/${el.name}`}><i class="fas fa-eye"></i></Link>
+                                <Link to={`/pokemon/${el.name}`}><i className="fas fa-eye"></i></Link>
                             </div>
                         )
                     })}
@@ -52,12 +53,13 @@ const PokemonList = (props) => {
    
     return(
         <div>
-            <div className={"search-wrapper"}>
+            <div className={"search-wrapper form"}>
                 <p>Search: </p>
                 <input type="text" onChange={e => setSearch(e.target.value)}/>
                 <button onClick={() => props.history.push(`/pokemon/${search}`)}>Search</button>
             </div>
             {ShowData()}
+            
             {!_.isEmpty(pokemonList.data) && (
                 <ReactPaginate
                     pageCount={Math.ceil(pokemonList.count / 15)}
