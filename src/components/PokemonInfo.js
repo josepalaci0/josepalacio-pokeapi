@@ -1,14 +1,14 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 
-const PokemonInfo = ({ url }) => {
-  const [pokemon, setPokemon] = useState({});
+const PokemonInfo = ({ url}) => {
+  const [pokemon, setPokemon] = useState({}); 
 
   useEffect(() => {
     axios.get(url).then((res) => setPokemon(res.data));
+    
   }, [url]);
-
-  
+ 
 
   return (
     <div className="column">
@@ -20,7 +20,8 @@ const PokemonInfo = ({ url }) => {
         </div>
         <div className="attribute">
           <b>height:</b> {pokemon.height}
-        </div>
+        </div>   
+             
       </div>
     </div>
   );

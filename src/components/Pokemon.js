@@ -18,6 +18,7 @@ const Pokemon = (props) => {
     const ShowData = () => {
         if (!_.isEmpty(pokemonState.data[pokemonName])) {
             const pokeData = pokemonState.data[pokemonName];  
+        
                      
             return (<>
                 <div className="container-pokemon">

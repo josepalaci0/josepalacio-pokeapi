@@ -41,3 +41,23 @@ export const GetPokemon = (pokemon) => async dispatch => {
         })
     }
 };
+
+export const GetPokemonType = (id) => async dispatch => {
+    try {
+        dispatch({
+            type: "POKEMON_MULTIPLE_LOADING"
+        });
+
+        const res = await axios.get(`https://pokeapi.co/api/v2/type/${id}`);
+
+        dispatch({
+            type: "POKEMON_MULTIPLE_SUCCESS",
+            payload: res.data,
+            pokemonId: id
+        })
+    } catch (e) {
+        dispatch({
+            type: "POKEMON_MULTIPLE_FAIL",
+        })
+    }
+};
