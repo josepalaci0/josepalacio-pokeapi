@@ -2,9 +2,6 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { GetPokemon } from "../actions/pokemonActions";
 import Progreso from './design/Progreso';
-
-
-
 import _ from "lodash";
 
 const Pokemon = (props) => {

@@ -133,8 +133,8 @@ export default function App() {
 
         <Switch>
           <Route path={`/`} exact component={HomeDefault} />
-          <Route path={`/pokemonlist`} component={PokemonList} />
-          <Route path={"/pokemon/:pokemon"} component={Pokemon} />
+          <Route path={`/pokemonlist`} exact component={PokemonList} />
+          <Route path={"/pokemon/:pokemon"} exact component={Pokemon} />
           <Redirect to={"/"} />
         </Switch>
 

@@ -98,9 +98,14 @@ nav a {
   text-align: center;
 
 }
-
+.select{
+  text-align: center;
+}
 .select select{
-  width: 200px;
+  width: 400px;
+  height: 35px;
+  border: 0.1;
+  border-radius: 8px;
 }
 
 .pokemon-wrapper .item {
@@ -140,22 +145,23 @@ text-align: center;
 .card img{
 width: 100px;
 }
-
-.pagination {
-  width: 60%;
-  height: 50px;
-  display: flex;
-  margin: auto;
-  list-style: none;
-  justify-content: space-between;
-  padding: 0; 
-  margin: 100px;
-  top: 100%;  
-  left: 15%;
-  font-size: 30px;
-  cursor: pointer;
-  
+.reders{
+  width: 120px;
+  height: 40px;
+  position: absolute;
+  left: 45%;
+  top: 19%;
+  border-radius: 6px;
+  border: 0;
 }
+.reders i{
+  font-size: 30px;
+}
+.reders i:hover{
+  font-size: 28px;
+  transition: 100ms;
+}
+
 /*FlexBox*/
 .flexbox-container {
   display: -ms-flex;
@@ -172,5 +178,24 @@ width: 100px;
   .flexbox-container > div:first-child {
   margin-right: 20px;
   }
+
+  .paginate{
+    background-color: cadetblue;
+    text-align: center;  
+    border-radius: 0px 0px 8px 8px;  
+  }
+  .paginate button{
+    margin: 6px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    font-size: 20px;
+    border: 0;
+  }
+  .paginate button:hover{
+    background-color: #68AE28;
+    transition: 500ms;
+  }
+
 
 
