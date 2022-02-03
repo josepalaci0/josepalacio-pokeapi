@@ -78,6 +78,11 @@ const PokemonList = (props) => {
 
     };
 
+    const[page,setPage] = useState(1)
+    const pokemonPerPage=6;
+    const lastIndex = page *pokemonPerPage;
+    const paginatePokemon = 
+
 
 
     return (
