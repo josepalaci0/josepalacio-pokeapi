@@ -14,8 +14,7 @@ const Pokemon = (props) => {
 
     const ShowData = () => {
         if (!_.isEmpty(pokemonState.data[pokemonName])) {
-            const pokeData = pokemonState.data[pokemonName];  
-        
+            const pokeData = pokemonState.data[pokemonName];      
                      
             return (<>
                 <div className="container-pokemon">
@@ -23,7 +22,6 @@ const Pokemon = (props) => {
                          <div className="img-primary">
                              <img src={pokeData.sprites.front_default} alt="" />
                          </div>
-
                         <div className={"pokemon-wrapper grid"}>
                             <div className="item">
                                 <h1>Sprites</h1>
@@ -34,9 +32,7 @@ const Pokemon = (props) => {
                             </div>
                         </div>
                         <br />
-
                         <div className="grid">
-
                         <div className="flexbox-container">
                                 <div className="item ">
                                     <h1>Order</h1>
@@ -49,9 +45,6 @@ const Pokemon = (props) => {
                                 </div>
                             </div>
                             <br/>
-
-
-
                             <div className="flexbox-container">
                                 <div className="item ">
                                     <h1>types</h1>
@@ -59,7 +52,6 @@ const Pokemon = (props) => {
                                         return <p key={el.type.url}>{el.type.name}</p>
                                     })}
                                 </div>
-
                                 <div className="item ">
                                     <h1>Abilities</h1>
                                     {pokeData.abilities.map(el => {
@@ -67,7 +59,6 @@ const Pokemon = (props) => {
                                     })}
                                 </div>
                             </div>
-
                             <div className="itemstats ">
 
                                 <h1>Stats</h1>
@@ -76,13 +67,9 @@ const Pokemon = (props) => {
                                 })}
                             </div>
                             <br />
-
-
-
                             <div className="pokemon-wrapper grid ">
                             <h1>game_indices</h1> 
-                            <div className="game-box">
-                                                           
+                            <div className="game-box">                                                           
                                 {pokeData.game_indices.map(el => {
                                         return <div key={el.version.url}> 
                                         <div className="game">                                        
@@ -93,8 +80,6 @@ const Pokemon = (props) => {
                             </div>
                         </div>
                         <br />
-
-
                         </div>
                     </div>
                     <div className="moves">
@@ -104,7 +89,6 @@ const Pokemon = (props) => {
                             <p>{el.move.name}</p>
                             <hr/>
                             </div> 
-
                         })}
                     </div>
                     <hr/>
@@ -117,11 +101,9 @@ const Pokemon = (props) => {
         if (pokemonState.loading) {
             return <p>Loading...</p>
         }
-
         if (pokemonState.errorMsg !== "") {
             return <p>{pokemonState.errorMsg}</p>
         }
-
         return <p>error getting pokemon</p>
     }
 

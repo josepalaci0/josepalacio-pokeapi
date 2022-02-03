@@ -9,31 +9,20 @@ import Language from "./components/Setting/Languege";
 import PokemonList from "./components/PokemonList";
 import Pokemon from './components/Pokemon';
 
-
-
-
-
 export default function App() {
   const [setting, setSetting] = useState(false);
   const [style, setStyle] = useState({});
- 
-
-
-  /*Setting*/
-
+    /*Setting*/
   let close = () => {
     setSetting(false);
   };
-
-  
-
+  /*Declaracion e colores de temas */
   useEffect(() => {
 
     const style = {
       background: `#ffffff`,
       color: '#000000',
     };
-
     setStyle(style);
   }, []);
 
@@ -72,8 +61,7 @@ export default function App() {
     setStyle(style)
     return Color = style;
   }
-
-
+  /*Return de la aplicacion */
   return (<>
     <div className="home">
       <div className="home-setting">
@@ -99,17 +87,7 @@ export default function App() {
                         <div className='themple3' onClick={CambioColor3}></div>
                         <div className='themple4' onClick={CambioColor4}></div>
                       </div>
-                    </div>
-
-                    <div className="setting-color">
-                      <h3>items per page</h3>
-                      <select>
-                        <option> default </option>
-                        <option> selected 2 </option>
-                        <option>selected 4</option>
-                        <option>selected 6</option>
-                      </select>
-                    </div>
+                    </div>                    
                   </div>
                 </div>
               </div>
@@ -137,16 +115,8 @@ export default function App() {
           <Route path={"/pokemon/:pokemon"} exact component={Pokemon} />
           <Redirect to={"/"} />
         </Switch>
-
       </div>
-
     </div>
-
-
-
-
-
-
   </>);
 }
 
